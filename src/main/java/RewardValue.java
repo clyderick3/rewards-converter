@@ -1,10 +1,12 @@
 public class RewardValue {
-    double miles;
+    private final double cashValue;
+    public static final double MILES_TO_CASH_CONVERSION_RATE = 0.0035;
 
 
     //Two constructors
     //Constructor that accepts cash.
     public RewardValue(double cashValue) {
+        this.cashValue = cashValue;
     }
     //Constructor that accepts miles.
     //public RewardValue(double milesValue) {}
